@@ -1,3 +1,8 @@
+type Account = {
+  email: string;
+  password: string;
+};
+
 const initialState: Account = {
   email: "",
   password: "",
@@ -6,11 +11,6 @@ const initialState: Account = {
 type ActionType = {
   type: string;
   payload?: Account;
-};
-
-type Account = {
-  email: string;
-  password: string;
 };
 
 export const accountReducer = (state = initialState, action: ActionType) => {
